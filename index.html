@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>أبو مجاهد للدهانات والديكورات والترميمات</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #222;
+  text-align: center;
+}
+
+header {
+  background: #2c3e50;
+  color: #fff;
+  padding: 26px 0 18px 0;
+}
+
+nav {
+  background: #34495e;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 13px 2vw;
+  font-size: 1.08em;
+  flex: 1;
+  min-width: 88px;
+  text-align: center;
+}
+
+nav a:hover {
+  background: #1abc9c;
+}
+
+section {
+  padding: 16px 2vw;
+  width: 100vw;
+  box-sizing: border-box;
+  margin: 0;
+  text-align: center;
+}
+
+h2, h3 {
+  color: #1abc9c;
+  margin-bottom: 12px;
+  margin-top: 10px;
+  font-size: 1.36em;
+  letter-spacing: 0.01em;
+}
+
+.title-large {
+  font-size:2em;
+  font-weight:bold;
+  margin:23px 0 10px 0;
+}
+
+.phone-blue {
+  font-size: 1.55em;
+  color: #1877f2;
+  margin-bottom: 2px;
+  margin-top: 6px;
+  display: block;
+  letter-spacing: 1.1px;
+}
+
+.supervisor-text {
+  font-size: 1em;
+  color: #888;
+  margin-top: 0;
+  margin-bottom: 7px;
+}
+
+.service-card {
+  background: #fff;
+  border: 2px solid #e1e1e1;
+  box-shadow: 0 2px 10px 0 rgba(30,100,135,0.09);
+  border-radius: 16px;
+  margin: 18px auto;
+  padding: 16px 2vw 20px 2vw;
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+}
+
+.services-img {
+  width: 96vw;
+  max-width: 355px;
+  border-radius: 15px;
+  margin: 12px auto 15px auto;
+  display: block;
+  box-shadow: 0 4px 22px rgba(30,100,135,0.09);
+}
+
+.service-card p {
+  font-size: 1.11em;
+  margin: 8px 0 3px 0;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.buttons-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 11px;
+}
+
+.whatsapp-service-btn, .call-service-btn {
+  min-width: 88px;
+  border: none;
+  border-radius: 7px;
+  font-size: 1em;
+  padding: 9px 15px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.16s;
+  justify-content: center;
+  outline: none;
+}
+
+.whatsapp-service-btn {
+  background: #25d366;
+  color: #fff;
+}
+.whatsapp-service-btn:hover {
+  background: #19b955;
+}
+.call-service-btn {
+  background: #3498db;
+  color: #fff;
+}
+.call-service-btn:hover {
+  background: #217dbb;
+}
+.button-img {
+  width: 24px;
+  height: 24px;
+  margin-left: 6px;
+  margin-right: 0;
+  display: inline-block;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(135px,1fr));
+  gap: 10px;
+  margin-bottom: 30px;
+  width: 100vw;
+  box-sizing: border-box;
+}
+.gallery img {
+  width: 99%;
+  max-height: 135px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  background: #eee;
+}
+
+footer {
+  background: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 15px 2vw;
+  user-select: none;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.fixed-btn-img {
+  position: fixed;
+  bottom: 26px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  box-shadow: 0 4px 11px rgba(0,0,0,0.1);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+.fixed-btn-img img {
+  width: 35px;
+  height: 35px;
+}
+#fixed-call { right:18px; }
+#fixed-wa { left:18px; }
+
+@media (max-width:600px) {
+  header, section { padding: 11px 1vw;}
+  .gallery img {max-height:82px;}
+  h2, h3 { font-size:1.02em;}
+  .title-large {font-size:1.17em;}
+  .phone-blue {font-size:1.14em;}
+  .service-card { max-width:97vw; }
+  .services-img { width:97vw; max-width:340px;}
+  .whatsapp-service-btn, .call-service-btn { font-size:14.2px; padding:10px 10px;}
+  .button-img { width:19px; height:19px;}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>أبو مجاهد للدهانات والديكورات والترميمات</h1>
+  <p>للدهانات، الديكورات، والترميمات بأعلى جودة</p>
+</header>
+
+<nav>
+  <a href="#about">من نحن</a>
+  <a href="#services">خدماتنا</a>
+  <a href="#exist">تواجدنا</a>
+  <a href="#gallery">معرض الصور</a>
+  <a href="#contact">اتصل بنا</a>
+</nav>
+
+<section id="about">
+  <h2>من نحن</h2>
+  <p>نحن فريق متخصص في مجال الدهانات، الديكورات، والترميمات<br>نقدم خدمات مميزة وسريعة تلبي جميع احتياجات عملائنا.</p>
+</section>
+
+<section id="services">
+  <h2>خدماتنا</h2>
+
+  <div class="service-card">
+    <h3>الدهانات الداخلية والخارجية</h3>
+    <img src="painting.jpg" alt="دهانات" class="services-img" loading="lazy"/>
+    <p>نقدم خدمات الدهانات الداخلية والخارجية بجودة عالية وألوان متنوعة تناسب جميع الأذواق</p>
+    <div class="buttons-row">
+      <a class="whatsapp-service-btn" href="https://wa.me/966556870840?text=أريد الدهانات الداخلية والخارجية وتم التحويل من موقع أبو مجاهد للدهانات والديكورات والترميمات" target="_blank">
+        <img class="button-img" src="whatsapp.png" alt="واتساب">واتساب
+      </a>
+      <a class="call-service-btn" href="tel:+966556870840" target="_blank">
+        <img class="button-img" src="call.png" alt="اتصال">اتصال
+      </a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <h3>أعمال الترميم</h3>
+    <img src="renovation.jpg" alt="ترميم" class="services-img" loading="lazy"/>
+    <p>ترميم شامل للمباني والشقق والفلل مع استخدام أحدث التقنيات والمواد</p>
+    <div class="buttons-row">
+      <a class="whatsapp-service-btn" href="https://wa.me/966556870840?text=أريد أعمال الترميم وتم التحويل من موقع أبو مجاهد للدهانات والديكورات والترميمات" target="_blank">
+        <img class="button-img" src="whatsapp.png" alt="واتساب">واتساب
+      </a>
+      <a class="call-service-btn" href="tel:+966556870840" target="_blank">
+        <img class="button-img" src="call.png" alt="اتصال">اتصال
+      </a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <h3>الديكورات</h3>
+    <img src="decorations.jpg" alt="ديكورات" class="services-img" loading="lazy"/>
+    <p>تصميم وتنفيذ ديكورات مبتكرة تناسب المساحات المختلفة وتعكس شخصيتك</p>
+    <div class="buttons-row">
+      <a class="whatsapp-service-btn" href="https://wa.me/966556870840?text=أريد الديكورات وتم التحويل من موقع أبو مجاهد للدهانات والديكورات والترميمات" target="_blank">
+        <img class="button-img" src="whatsapp.png" alt="واتساب">واتساب
+      </a>
+      <a class="call-service-btn" href="tel:+966556870840" target="_blank">
+        <img class="button-img" src="call.png" alt="اتصال">اتصال
+      </a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <h3>ورق الجدران</h3>
+    <img src="wallpaper.jpg" alt="ورق جدران" class="services-img" loading="lazy"/>
+    <p>توريد وتركيب ورق جدران عالي الجودة بتصاميم عصرية</p>
+    <div class="buttons-row">
+      <a class="whatsapp-service-btn" href="https://wa.me/966556870840?text=أريد ورق الجدران وتم التحويل من موقع أبو مجاهد للدهانات والديكورات والترميمات" target="_blank">
+        <img class="button-img" src="whatsapp.png" alt="واتساب">واتساب
+      </a>
+      <a class="call-service-btn" href="tel:+966556870840" target="_blank">
+        <img class="button-img" src="call.png" alt="اتصال">اتصال
+      </a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <h3>الجبس بورد والأسمنت بورد</h3>
+    <img src="gypsum.jpg" alt="جبس بورد" class="services-img" loading="lazy"/>
+    <p>تركيب وتصميم أسقف وجدران جبس بورد وأسمنت بورد بمهارة واحترافية</p>
+    <div class="buttons-row">
+      <a class="whatsapp-service-btn" href="https://wa.me/966556870840?text=أريد الجبس بورد والأسمنت بورد وتم التحويل من موقع أبو مجاهد للدهانات والديكورات والترميمات" target="_blank">
+        <img class="button-img" src="whatsapp.png" alt="واتساب">واتساب
+      </a>
+      <a class="call-service-btn" href="tel:+966556870840" target="_blank">
+        <img class="button-img" src="call.png" alt="اتصال">اتصال
+      </a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <h3>المرايا والتكسيات</h3>
+    <img src="mirrors.jpg" alt="مرايا وتكسيات" class="services-img" loading="lazy"/>
+    <p>تركيب مرايا وتكسيات بديلة للرخام والخشب بتصاميم عصرية وجذابة</p>
+    <div class="buttons-row">
+      <a class="whatsapp-service-btn" href="https://wa.me/966556870840?text=أريد المرايا والتكسيات وتم التحويل من موقع أبو مجاهد للدهانات والديكورات والترميمات" target="_blank">
+        <img class="button-img" src="whatsapp.png" alt="واتساب">واتساب
+      </a>
+      <a class="call-service-btn" href="tel:+966556870840" target="_blank">
+        <img class="button-img" src="call.png" alt="اتصال">اتصال
+      </a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <h3>شاشات تلفزيون مدمجة</h3>
+    <img src="tv.jpg" alt="شاشات مدمجة" class="services-img" loading="lazy"/>
+    <p>تصميم وتركيب شاشات تلفزيون مدمجة في الجدران والديكورات بشكل أنيق</p>
+    <div class="buttons-row">
+      <a class="whatsapp-service-btn" href="https://wa.me/966556870840?text=أريد شاشات تلفزيون مدمجة وتم التحويل من موقع أبو مجاهد للدهانات والديكورات والترميمات" target="_blank">
+        <img class="button-img" src="whatsapp.png" alt="واتساب">واتساب
+      </a>
+      <a class="call-service-btn" href="tel:+966556870840" target="_blank">
+        <img class="button-img" src="call.png" alt="اتصال">اتصال
+      </a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <h3>الدرج والطاولات</h3>
+    <img src="stairs.jpg" alt="درج وطاولات" class="services-img" loading="lazy"/>
+    <p>تصميم وتركيب درج وطاولات مخصصة تناسب مساحتك وتصميمك الداخلي</p>
+    <div class="buttons-row">
+      <a class="whatsapp-service-btn" href="https://wa.me/966556870840?text=أريد الدرج والطاولات وتم التحويل من موقع أبو مجاهد للدهانات والديكورات والترميمات" target="_blank">
+        <img class="button-img" src="whatsapp.png" alt="واتساب">واتساب
+      </a>
+      <a class="call-service-btn" href="tel:+966556870840" target="_blank">
+        <img class="button-img" src="call.png" alt="اتصال">اتصال
+      </a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <h3>العوازل</h3>
+    <img src="insulation.jpg" alt="عوازل" class="services-img" loading="lazy"/>
+    <p>عوازل مائية وحرارية للمباني بمواد عالية الجودة وضمان طويل الأمد</p>
+    <div class="buttons-row">
+      <a class="whatsapp-service-btn" href="https://wa.me/966556870840?text=أريد العوازل وتم التحويل من موقع أبو مجاهد للدهانات والديكورات والترميمات" target="_blank">
+        <img class="button-img" src="whatsapp.png" alt="واتساب">واتساب
+      </a>
+      <a class="call-service-btn" href="tel:+966556870840" target="_blank">
+        <img class="button-img" src="call.png" alt="اتصال">اتصال
+      </a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <h3>أبوكسي أرضيات</h3>
+    <img src="epoxy.jpg" alt="أرضيات أبوكسي" class="services-img" loading="lazy"/>
+    <p>تركيب أرضيات الإيبوكسي المتينة والجميلة للمصانع والمرائب والمنازل</p>
+    <div class="buttons-row">
+      <a class="whatsapp-service-btn" href="https://wa.me/966556870840?text=أريد أبوكسي أرضيات وتم التحويل من موقع أبو مجاهد للدهانات والديكورات والترميمات" target="_blank">
+        <img class="button-img" src="whatsapp.png" alt="واتساب">واتساب
+      </a>
+      <a class="call-service-btn" href="tel:+966556870840" target="_blank">
+        <img class="button-img" src="call.png" alt="اتصال">اتصال
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="exist">
+  <div class="title-large">تواجدنا في الطائف والمناطق المحيطة</div>
+  <span class="phone-blue">0556870840</span>
+  <div class="supervisor-text">تحت إشراف احمد العمري</div>
+</section>
+
+<section id="gallery">
+  <h2>معرض الصور</h2>
+  <div class="gallery">
+    <img src="decorations.jpg" alt="ديكورات" loading="lazy"/>
+    <img src="epoxy.jpg" alt="إيبوكسي" loading="lazy"/>
+    <img src="gypsum.jpg" alt="جبس بورد" loading="lazy"/>
+    <img src="insulation.jpg" alt="عوازل" loading="lazy"/>
+    <img src="map.jpg" alt="خريطة" loading="lazy"/>
+    <img src="mirrors.jpg" alt="مرايا" loading="lazy"/>
+    <img src="painting.jpg" alt="دهانات" loading="lazy"/>
+    <img src="renovation.jpg" alt="ترميم" loading="lazy"/>
+    <img src="stairs.jpg" alt="درج" loading="lazy"/>
+    <img src="tv.jpg" alt="شاشات" loading="lazy"/>
+    <img src="wallpaper.jpg" alt="ورق جدران" loading="lazy"/>
+    <img src="work1.jpg" alt="عمل 1" loading="lazy"/>
+    <img src="work2.jpg" alt="عمل 2" loading="lazy"/>
+    <img src="work3.jpg" alt="عمل 3" loading="lazy"/>
+    <img src="work4.jpg" alt="عمل 4" loading="lazy"/>
+    <img src="work5.jpg" alt="عمل 5" loading="lazy"/>
+    <img src="work6.jpg" alt="عمل 6" loading="lazy"/>
+    <img src="work7.jpg" alt="عمل 7" loading="lazy"/>
+    <img src="work8.jpg" alt="عمل 8" loading="lazy"/>
+    <img src="work9.jpg" alt="عمل 9" loading="lazy"/>
+    <img src="work10.jpg" alt="عمل 10" loading="lazy"/>
+    <img src="work11.jpg" alt="عمل 11" loading="lazy"/>
+    <img src="work12.jpg" alt="عمل 12" loading="lazy"/>
+    <img src="work13.jpg" alt="عمل 13" loading="lazy"/>
+    <img src="work14.jpg" alt="عمل 14" loading="lazy"/>
+    <img src="work15.jpg" alt="عمل 15" loading="lazy"/>
+    <img src="work16.jpg" alt="عمل 16" loading="lazy"/>
+    <img src="work17.jpg" alt="عمل 17" loading="lazy"/>
+    <img src="work18.jpg" alt="عمل 18" loading="lazy"/>
+    <img src="work19.jpg" alt="عمل 19" loading="lazy"/>
+    <img src="work20.jpg" alt="عمل 20" loading="lazy"/>
+    <img src="work21.jpg" alt="عمل 21" loading="lazy"/>
+    <img src="work22.jpg" alt="عمل 22" loading="lazy"/>
+    <img src="work23.jpg" alt="عمل 23" loading="lazy"/>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>اتصل بنا</h2>
+  <p>تواصل معنا مباشرة عبر الرقم أو الأزرار الثابتة في الموقع.</p>
+</section>
+
+<!-- زر ثابت للاتصال -->
+<a href="tel:+966556870840" target="_blank" class="fixed-btn-img" id="fixed-call">
+  <img src="call.png" alt="اتصل">
+</a>
+<!-- زر ثابت واتساب برسالة مخصصة -->
+<a href="https://wa.me/966556870840?text=تم%20تحويل%20هذه%20الدردشة%20من%20موقع%20ابو%20مجاهد%20على%20الإنترنت" target="_blank" class="fixed-btn-img" id="fixed-wa">
+  <img src="whatsapp.png" alt="واتساب">
+</a>
+<footer onclick="location.href='https://wa.me/967779313305';" title="تم تصميم الموقع بواسطة Yemen Bot AI">
+  تم تصميم هذا الموقع بواسطة Yemen Bot AI
+</footer>
+</body>
+</html>
